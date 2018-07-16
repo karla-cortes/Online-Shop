@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Urban Renewal</h1>
+
+
+<div class="left">
+<%= image_tag @product.image.url(:large) %>
+</div>
+
+<div class="row">
+<div class="col s2 m4 l6 ">
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @product.size %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @product.brand %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @product.color %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @product.price_in_cents %>
+</p>
+
+<h5>Reviews</h5>
+<hr/>
+<% @product.reviews.each do |review| %>
+  <p>
+    <%= review.comment %>
+    <br>
+    Added on: <%= review.created_at %>
+  </p>
+<% end %>
+</div>
+</div>
+
+<h5>New Review</h5>
+<hr/>
+<%= render 'reviews/form' %>
+
+<%= link_to 'Edit', edit_product_path(@product), class: "btn-flat" %>
+<%= link_to 'Back', products_path, class: "btn-flat" %>
