@@ -45,7 +45,7 @@
   <p>
     <%= review.comment %>
     <br>
-    Added on: <%= review.created_at %>
+    <span class="date">Added on: <%= review.created_at.strftime("%Y-%m-%d") %></span>
   </p>
 <% end %>
 </div>

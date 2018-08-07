@@ -1,3 +1,90 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+ margin-top: 0;
+ font-family: 'Shrikhand', cursive;
+ font-size: 50px;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+
+p {
+ font-family: 'Roboto',sans-serif;
+ font-size: 14px;
+}
+
+.product-table {
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+thead {
+ margin-bottom: 0;
+ margin-right: 20px;
+}
+
+img {
+ margin-top: 10px;
+}
+
+.reviews {
+ font-size: 12px !important;
+}
+
+.right {
+ width: 50%;
+}
+
+hr {
+ background-color: black;
+ border: 0.5px solid black;
+}
+
+#review_comment {
+ border-color: 	#E0E0E0;
+ border-radius: 5px;
+ height: 80px;
+}
+
+::placeholder {
+  color: #828282;
+  text-transform: uppercase;
+}
+.new-product {
+ display: flex;
+ justify-content: center;
+}
+
+.main {
+ display: flex;
+ justify-content: center;
+}
+
+strong {
+ font-weight: bolder;
+}
+
+#wrapper {
+ width: 800px;
+ margin: 0 auto;
+}
+
+.date {
+  font-weight: bold;
+}
+
+input[type=submit] {
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}

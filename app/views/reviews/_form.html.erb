@@ -12,8 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, placeholder: "Write a review" %>
   </div>
 
   <% if @product.nil? %>
